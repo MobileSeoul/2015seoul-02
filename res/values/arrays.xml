@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car">
+        <item>지휘차</item>
+        <item>펌프차</item>
+        <item>탱크차</item>
+        <item>구조대100</item>
+        <item>구조대200</item>
+        <item>구급차</item>
+        <item>화학차</item>
+        <item>미분무차</item>
+        <item>견인차</item>
+    </string-array>
+    <string-array name="set">
+        <item>1팀</item>
+        <item>2팀</item>
+        <item>3팀</item>
+    </string-array>
+    
+</resources>

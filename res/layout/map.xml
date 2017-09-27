@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="370dp" 
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:background="#000000">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <fragment
+		    android:id="@+id/map"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    class="com.google.android.gms.maps.SupportMapFragment" />
+		<ImageView
+		    android:id="@+id/iv"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:scaleType="fitXY"
+		    android:src="@drawable/sateimg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+			<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_weight="3"
+	            android:background="#000000"
+	            android:layout_margin="5dp"
+	            android:padding="1dp">
+		        <Button
+		            android:id="@+id/wind"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="#00ff00"
+		            android:text="풍향: 남동풍\r\n풍속: 1m/s"/>
+	        </LinearLayout>
+			<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_weight="0.5"
+	            android:background="#000000"
+	            android:layout_margin="5dp"
+	            android:padding="1dp">
+		        <Button
+		            android:id="@+id/button4"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="#00ff00"
+		            android:text="목적지보기" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_weight="0.5"
+	            android:background="#000000"
+	            android:layout_margin="5dp"
+	            android:padding="1dp">
+		        <Button
+		            android:id="@+id/button5"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="#00ff00"
+		            android:text="위성사진보기" />
+	        </LinearLayout>
+	    </LinearLayout>
+      
+    </FrameLayout>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+		<ScrollView 
+		    android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp">
+	        <TextView
+	            android:id="@+id/memo"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:text="출동상황메모" />
+        </ScrollView>
+		<LinearLayout 
+		    android:id="@+id/ll"
+		    android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="1dp">
+	        <ListView
+	            android:id="@+id/listView1"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="#ffffff">
+       		</ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.82" >
+
+            <LinearLayout
+                android:id="@+id/cholayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#000000"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/chotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="골든타이머 " />
+
+                <Chronometer
+                    android:id="@+id/chronometer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cctv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/cctv" />
+    </LinearLayout>
+
+</LinearLayout>

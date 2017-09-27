@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">골든타임 IT9</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pic">사진</string>
+    <string name="ani">동영상</string>
+    <string name="rec">녹음</string>
+	<string name="spinner">스피너</string>
+</resources>
